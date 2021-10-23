@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+:root {
+  --header-height: 5rem;
+  --hue: 10;
+  --first-color: hsl(var(--hue) 90% 50%);
+  --first-color-alt: hsl(var(--hue) 90% 45%);
+  --title-color: hsl(var(--hue) 3% 100%);
+  --text-color: hsl(var(--hue) 3% 85%);
+  --text-color-light: hsl(var(--hue) 3% 60%);
+  --body-color: linear-gradient(90deg, hsl(40, 40%, 40%) 0%, hsl(50, 50%, 50%) 100%);
+  --body-font: 'Roboto', sans-serif {
+  --biggest-font-size: 4rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.4rem;
+  --h3-font-size: 1.8rem;
+  --normal-font-size: 1.6rem;
+  --small-font-size: 1.4rem;
+  --smaller-font-size: 1.2rem; }
+
+	// Fonts weights
+	--font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-black: 900;
+  --line-base: 1;
+  --line-normal: 1.2;
+  --line-big: 1.35;
+  --line-large: 1.45;
+  --space-1: .4rem;
+  --space-2: .8rem;
+  --space-3: 1.2rem;
+  --space-4: 1.6rem;
+  --space-5: 2rem;
+  --space-6: 2.4rem;
+  --space-7: 2.8rem;
+  --space-8: 3.2rem;
+  --space-9: 3.6rem;
+  --space-10: 4rem;
+  --space-11: 4.4rem;
+  --space-12: 4.8rem;
+  --space-13: 5.2rem;
+  --space-14: 5.6rem;
+  --space-15: 6.4rem;
+  --space-16: 6.8rem;
+  --space-17: 7.2rem;
+  --space-18: 7.6rem;
+  --space-19: 8rem;
+  --space-20: 8.4rem;
+  --space-21: 8.8rem;
+  --space-22: 9.2rem;
+  --space-23: 9.6rem;
+  --space-24: 10rem;
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    --biggest-font-size: 2rem;
+    --h1-font-size: 4rem;
+    --h2-font-size: 2.4rem;
+    --h3-font-size: 1.8rem;
+    --normal-font-size: 1.6rem;
+    --small-font-size: 1.4rem;
+    --smaller-font-size: 1.2rem;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 10px;
+  background: var(--body-color);
+  color: var(--text-color);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--title-weight);
+  line-height: var(--line-big);
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  line-height: var(--line-base);
+}
